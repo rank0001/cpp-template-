@@ -1,0 +1,33 @@
+int findComplement(int n) {
+   int bit_count = floor(log2(n))+1;
+   int ones = ((1 << bit_count) - 1);
+   return ones ^ n;
+}
+Right Shift:
+ lets take N=32; which is 100000 in Binary Form.
+     Now, if “N is right-shifted by 2” i.e N=N>>2 
+     then N will become N=N/(2^2). Thus, N=32/(2^2)=8
+      which can be wriiten as 1000.
+Left Shift:
+   Now, if “N is left-shifted by 2” i.e N=N<<2 then
+    N will become N=N*(2^2). Thus, N=22*(2^2)=88 which 
+    can be wriiten as 01011000.
+------1's complement ->(~x)
+----2's complement ->(-x)
+-------find the right most set bit:
+  x = (n&-n)===>>will give the result
+---kernighan algo to count set bits:
+while(n!=0){
+   //find the right most set bit;
+   a = (n&-n);
+   minus it from n;
+   n-=a;
+   count++;
+}
+----to check if power of two
+if(n && !(n&n-1))
+ //print power of two
+else 
+ //not
+ 
+

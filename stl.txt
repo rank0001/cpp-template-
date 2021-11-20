@@ -1,0 +1,28 @@
+useful functions 
+unique(begin,end)-begin->returns how many unique numbers in array
+transform(begin,end,begin,::toupper/::tolower)changes uppercase or lowercase
+s="shahriar" 
+//findin substr exists or not
+if(s.find("ria")!=-1)cout<<"substring found"<<endl;
+//next lex greater perm
+next_permutation(s.begin().s.end())
+//for 2d vector 
+vector<vector<int>> vec( n , vector<int> (m,-1)); 
+isspace,isupper,islower,tolower,toupper
+//set s.count(2)//returns if elements exist or not
+//set s.erase(element)// s.erase(2)//erases 2
+//set set<int,greater<int>>s//for decreasing order
+set<pair<int,int>,greater<pair<int,int>>>s;
+
+//multiset int si =s.find(1)->gives location of that 
+then,s.erase(si);
+in multiset s.erase(val) will delete all the val present in the set
+in multiset s.erase(s.find())will erase single instance of it
+priority queue<int,vector<int>greater<int>>q//for sorting ascending
+m.find(ch) != m.end())//for value finding in map
+// Deletes 4 characters from index number 1
+    str.erase(1, 4);
+
+ //getline problem fix
+  while (s.length()==0 )
+        getline(cin, s);   
